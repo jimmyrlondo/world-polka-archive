@@ -1,0 +1,29 @@
+:root {
+    --wpa-burgundy: #721c24;
+    --wpa-gold: #b38b4d;
+    --wpa-cream: #f8f5f2;
+    --wpa-charcoal: #1c1917;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--wpa-cream);
+    color: var(--wpa-charcoal);
+    margin: 0;
+}
+
+h1, h2, h3, .serif {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Unified Link Hover */
+.nav-link {
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: var(--wpa-burgundy);
+}
+
+.bg-burgundy { background-color: var(--wpa-burgundy); }
+.text-burgundy { color: var(--wpa-burgundy); }
+.bg-gold { background-color: var(--wpa-gold); }

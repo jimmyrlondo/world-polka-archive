@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Submission | WPA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-stone-50 text-stone-900">
+
+    <main class="max-w-4xl mx-auto py-20 px-6">
+        <header class="border-b-4 border-stone-800 pb-10 mb-16">
+            <h1 class="text-6xl font-serif italic mb-4 text-burgundy">Artist Registry</h1>
+            <p class="text-stone-500 uppercase font-black tracking-[0.3em] text-xs">Contribute to the Polka Wiki Database</p>
+        </header>
+
+        <form action="YOUR_FORMSPREE_ENDPOINT" method="POST" class="space-y-12">
+            
+            <div class="space-y-6">
+                <h3 class="text-burgundy font-black text-sm uppercase tracking-widest border-b-2 border-stone-800 pb-2">01. Identity</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <label class="block text-[10px] font-black text-stone-500 uppercase mb-2">Artist / Band Name</label>
+                        <input type="text" name="artist_name" required class="w-full border-2 border-stone-800 p-4 bg-white outline-none shadow-[4px_4px_0px_rgba(0,0,0,1)]">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-black text-stone-500 uppercase mb-2">Primary Instrument(s)</label>
+                        <input type="text" name="instruments" placeholder="e.g. Button Box, Clarinet" class="w-full border-2 border-stone-800 p-4 bg-white outline-none shadow-[4px_4px_0px_rgba(0,0,0,1)]">
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <h3 class="text-burgundy font-black text-sm uppercase tracking-widest border-b-2 border-stone-800 pb-2">02. Context</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <label class="block text-[10px] font-black text-stone-500 uppercase mb-2">Home Base / Region</label>
+                        <input type="text" name="home_base" placeholder="e.g. Cleveland, OH / Chicago, IL" class="w-full border-2 border-stone-800 p-4 bg-white outline-none shadow-[4px_4px_0px_rgba(0,0,0,1)]">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-black text-stone-500 uppercase mb-2">Active Years (Approx.)</label>
+                        <input type="text" name="years_active" placeholder="e.g. 1950 - 1975" class="w-full border-2 border-stone-800 p-4 bg-white outline-none shadow-[4px_4px_0px_rgba(0,0,0,1)]">
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <h3 class="text-burgundy font-black text-sm uppercase tracking-widest border-b-2 border-stone-800 pb-2">03. Narrative</h3>
+                <div>
+                    <label class="block text-[10px] font-black text-stone-500 uppercase mb-2">Biographical Notes / Historical Significance</label>
+                    <textarea name="bio" rows="6" class="w-full border-2 border-stone-800 p-4 bg-white outline-none shadow-[4px_4px_0px_rgba(0,0,0,1)]" placeholder="Tell the story of the band, their significance, and any notable recordings..."></textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="w-full bg-burgundy text-white py-6 font-black uppercase tracking-widest hover:bg-black transition shadow-[8px_8px_0px_rgba(0,0,0,1)] active:translate-y-1 active:shadow-none">
+                Submit Artist to Registry
+            </button>
+        </form>
+    </main>
+
+</body>
+</html>

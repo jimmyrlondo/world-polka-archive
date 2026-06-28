@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lab | World Polka Archive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-stone-50 text-stone-900">
+
+    <nav class="bg-white border-b-2 border-stone-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center text-xs uppercase font-bold tracking-widest">
+            <a href="index.html" class="flex flex-col">
+                <span class="font-serif font-bold text-2xl tracking-tight leading-none text-stone-900">WORLD POLKA ARCHIVE</span>
+                <span class="text-[10px] text-stone-400 mt-1">Preservation • Restoration • Distribution</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="archive.html" class="hover:text-burgundy">Archive</a>
+                <a href="lab.html" class="text-burgundy">The Lab</a>
+                <a href="process.html" class="hover:text-burgundy">The Process</a>
+                <a href="philanthropy.html" class="hover:text-burgundy">Philanthropy</a>
+            </div>
+            <a href="submit.html" class="bg-burgundy text-white px-6 py-2 rounded-sm shadow-[3px_3px_0px_rgba(0,0,0,1)]">Preserve Legacy</a>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto py-20 px-6">
+        <header class="text-center mb-20">
+            <h1 class="text-6xl font-serif italic mb-4">The North Bloomfield Lab</h1>
+            <p class="text-stone-500 uppercase font-black tracking-[0.3em] text-[10px]">Restoration Standards & Technical Specifications</p>
+        </header>
+
+        <div class="grid md:grid-cols-3 gap-12 mb-20 border-y-2 border-stone-800 py-12">
+            <div>
+                <h4 class="font-black text-xs uppercase mb-4 text-burgundy">01. Signal Purity</h4>
+                <p class="text-sm leading-relaxed text-stone-600">We prioritize the original analog signal. By using the <strong>Universal Audio Volt 476</strong>, we capture the natural warmth of the accordion and the resonance of the brass with 24-bit precision.</p>
+            </div>
+            <div>
+                <h4 class="font-black text-xs uppercase mb-4 text-burgundy">02. Mechanical Restoration</h4>
+                <p class="text-sm leading-relaxed text-stone-600">Our lab utilizes specialized vacuum cleaning for vinyl and shellac, and surgical-grade head cleaning for magnetic tapes. We remove the debris of decades, not the soul of the music.</p>
+            </div>
+            <div>
+                <h4 class="font-black text-xs uppercase mb-4 text-burgundy">03. The Metadata Wiki</h4>
+                <p class="text-sm leading-relaxed text-stone-600">Every recording is cross-referenced against our growing <strong>Polka Wiki</strong> database. We track matrix numbers, pressing plants, and session musicians to build a complete historical map.</p>
+            </div>
+        </div>
+
+        <section class="bg-stone-900 text-white p-12 rounded-sm shadow-[8px_8px_0px_var(--wpa-gold)]">
+            <h2 class="text-3xl font-serif italic mb-6 text-gold">Building the Polka Wiki</h2>
+            <p class="text-lg text-stone-300 mb-8 leading-relaxed">
+                Archiving isn't just about sound; it's about **data**. For every submission, we generate a forensic metadata profile. This information fuels our automated "Wiki" engine, ensuring that every artist and session musician is documented and discoverable.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8 text-sm">
+                <div class="border border-stone-700 p-6">
+                    <h5 class="font-bold uppercase text-gold mb-3 tracking-widest">Metadata Tracked:</h5>
+                    <ul class="space-y-2 text-stone-400 font-mono text-xs">
+                        <li>[ ] Artist / Orchestra Credits</li>
+                        <li>[ ] Recording Date & Location</li>
+                        <li>[ ] Label & Matrix Numbers</li>
+                        <li>[ ] Language & Regional Style</li>
+                    </ul>
+                </div>
+                <div class="border border-stone-700 p-6">
+                    <h5 class="font-bold uppercase text-gold mb-3 tracking-widest">Digital Export:</h5>
+                    <p class="text-stone-400 italic">Our system converts intake spreadsheets into CSV formats, allowing us to rapidly generate new artist pages and historical entries with 100% accuracy.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-10 text-center text-[10px] font-bold uppercase tracking-widest text-stone-400">
+        WPA Technical Operations • North Bloomfield, Ohio
+    </footer>
+
+</body>
+</html>
